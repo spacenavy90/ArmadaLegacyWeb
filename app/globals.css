@@ -51,7 +51,7 @@
 body {
     font-family: var(--optima);
     color: hsl(var(--foreground));
-    background: url('background.jpg');
+    background: url('background.webp');
     height: 100vh;
     overflow: hidden;
 }

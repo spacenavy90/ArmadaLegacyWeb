@@ -3,7 +3,7 @@
 import * as React from "react"
 import { Menu } from "lucide-react"
 import Link from "next/link"
-import Logo from "@/components/logo.svg"
+import Logo from "@/components/logo.webp"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
