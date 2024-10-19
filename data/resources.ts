@@ -1,4 +1,4 @@
-type Faction = "Empire" | "Republic" | "Separatist" | "Rebel" | "UNSC" | "Covenant" | "Colonial" | "Cylon";
+type Faction = "Empire" | "Republic" | "Separatist" | "Rebel";
 type Category = "Ship" | "Squadron" | "Play Material" | "Service";
 
 interface Item {
