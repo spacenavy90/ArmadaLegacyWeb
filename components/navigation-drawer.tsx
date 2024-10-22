@@ -8,7 +8,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
 const navigationItems = [
-  { title: 'Legends Builder', href: 'https://testbuilder.armadalegends.com' },
+  { title: 'Armada Legends Builder', href: 'https://builder.swarmada.wiki/' },
   { title: 'Star Wars Legends Resources', href: '/' },
   { title: 'Halo Legends Resources', href: '/data/resources-halo.ts' },
   { title: 'BSG Legends Resources', href: '/data/resources-bsg.ts' },
