@@ -25,7 +25,7 @@ const logo = localFont({
 });
 
 export const metadata: Metadata = {
-    title: "Armada Legends",
+    title: "Armada Legacy",
 };
 
 export default function RootLayout({
@@ -36,12 +36,17 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
-                <Analytics/>
+                <Analytics />
             </head>
-            
+
             <body className={`${title.variable} ${optima.variable} ${fighter.variable} ${logo.variable} antialiased`}>
                 <NavigationDrawer />
-                {children}
+                <main className="h-full w-full overflow-y-auto flex justify-center">
+                    <div className="fixed h-screen w-screen bg-black/[10%] z-10 pointer-events-none" />
+                    <div className="z-20">
+                        {children}
+                    </div>
+                </main>
             </body>
         </html>
     );

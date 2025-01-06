@@ -2,25 +2,38 @@
 
 import React, { useState, useMemo, useRef, useEffect } from "react"
 import { Input } from "@/components/ui/input"
-import { Faction, Category, Item, Entity, resources } from '@/data/resources'
 import Image from 'next/image'
-import { ChevronDown, Search } from "lucide-react"
+import { ChevronDown, Search } from 'lucide-react'
+
+// Dynamic import based on the plug
+import { resources as swResources } from '@/data/sw'
+import { resources as haloResources } from '@/data/halo'
+import { resources as bsgResources } from '@/data/bsg'
+
+type Plug = 'sw' | 'halo' | 'bsg'
+
+type MultiSelectProps = {
+    options: Array<{ label: string; value: string }>;
+    selected: string[];
+    onChange: (selected: string[]) => void;
+    placeholder: string;
+}
 
 // Basic MultiSelect component
-function MultiSelect({ options, selected, onChange, placeholder }: { options: any, selected: any, onChange: any, placeholder: any }) {
-    const [isOpen, setIsOpen] = useState(false)
-    const ref: any = useRef(null)
+function MultiSelect({ options, selected, onChange, placeholder }: MultiSelectProps) {
+    const [isOpen, setIsOpen] = useState<boolean>(false)
+    const ref = useRef<HTMLDivElement>(null)
 
-    const handleToggle = (value: any) => {
+    const handleToggle = (value: string) => {
         const updatedSelection = selected.includes(value)
-            ? selected.filter((item: any) => item !== value)
+            ? selected.filter((item: string) => item !== value)
             : [...selected, value]
         onChange(updatedSelection)
     }
 
     useEffect(() => {
-        function handleClickOutside(event: any) {
-            if (ref.current && !ref.current.contains(event.target)) {
+        function handleClickOutside(event: MouseEvent) {
+            if (ref.current && !ref.current.contains(event.target as Node)) {
                 setIsOpen(false)
             }
         }
@@ -34,14 +47,14 @@ function MultiSelect({ options, selected, onChange, placeholder }: { options: an
     return (
         <div className="relative flex-1" ref={ref}>
             <button
-                onClick={() => setIsOpen(!isOpen)} className="px-4 py-2 text-left bg-card border shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-between min-w-full gap-2"
+                onClick={() => setIsOpen(!isOpen)} className="px-4 py-2 text-white text-left bg-black/50 backdrop-blur shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 flex items-center justify-between min-w-full gap-2 truncate"
             >
                 <span>{selected.length > 0 ? `${selected.length} selected` : placeholder}</span>
                 <ChevronDown className="h-4 w-4 text-gray-500" />
             </button>
-            <div className={`absolute z-10 mt-1 bg-card border shadow-lg ${isOpen ? "block" : "invisible"} min-w-fit w-full`}>
-                {options.map((option: any) => (
-                    <label key={option.value} className="flex items-center px-4 py-2 text-nowrap">
+            <div className={`absolute z-10 mt-1 bg-black/50 border border-white/20 backdrop-blur shadow-lg ${isOpen ? "block" : "invisible"} min-w-fit w-full`}>
+                {options.map((option) => (
+                    <label key={option.value} className="flex items-center px-4 py-2 text-nowrap text-white">
                         <input
                             type="checkbox"
                             checked={selected.includes(option.value)}
@@ -56,17 +69,31 @@ function MultiSelect({ options, selected, onChange, placeholder }: { options: an
     )
 }
 
-export function FilteredTable() {
+export function FilteredTable({ plug }: { plug: Plug }) {
     const [typeFilters, setTypeFilters] = useState<string[]>([])
     const [categoryFilters, setCategoryFilters] = useState<string[]>([])
     const [factionFilters, setFactionFilters] = useState<string[]>([])
     const [searchFilter, setSearchFilter] = useState<string>("")
 
+    // Select the correct resources based on the plug
+    const resources = useMemo(() => {
+        switch (plug) {
+            case 'sw':
+                return swResources;
+            case 'halo':
+                return haloResources;
+            case 'bsg':
+                return bsgResources;
+            default:
+                return [];
+        }
+    }, [plug]);
+
     const typeOptions = useMemo(() => {
         const types = new Set<string>()
         resources.forEach(entity => entity.items.forEach(item => types.add(item.type)))
         return Array.from(types).map(type => ({ label: type, value: type }))
-    }, [])
+    }, [resources])
 
     const categoryOptions = useMemo(() => {
         const categories = new Set<string>()
@@ -74,7 +101,7 @@ export function FilteredTable() {
             if (entity.category) categories.add(entity.category)
         })
         return Array.from(categories).map(category => ({ label: category, value: category }))
-    }, [])
+    }, [resources])
 
     const factionOptions = useMemo(() => {
         const factions = new Set<string>()
@@ -82,7 +109,7 @@ export function FilteredTable() {
             if (entity.faction) entity.faction.forEach(f => factions.add(f))
         })
         return Array.from(factions).map(faction => ({ label: faction, value: faction }))
-    }, [])
+    }, [resources])
 
     const filteredEntities = useMemo(() => {
         // Filter entities based on the given filters
@@ -96,18 +123,17 @@ export function FilteredTable() {
 
         // Sort entities alphabetically by name
         return filtered.sort((a, b) => a.name.localeCompare(b.name));
-    }, [typeFilters, categoryFilters, factionFilters, searchFilter]);
-
+    }, [resources, typeFilters, categoryFilters, factionFilters, searchFilter]);
 
     return (
-        <div className="flex flex-col h-full space-y-4 max-w-[1024px] w-full">
+        <div className="flex flex-col h-full space-y-4 max-w-[1024px] w-full px-3 pt-16">
             <div className="flex gap-4 flex-wrap">
-                <div className="relative w-full flex-3">
+                <div className="relative w-full flex-3 ">
                     <Input
                         placeholder="Search..."
                         value={searchFilter}
                         onChange={(e) => setSearchFilter(e.target.value)}
-                        className="w-full pl-8 pr-4 py-2 h-fit text-base bg-card"
+                        className="w-full pl-8 pr-4 py-2 h-fit text-base bg-black/50 border-none text-white backdrop-blur"
                     />
                     <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
                 </div>
@@ -135,17 +161,14 @@ export function FilteredTable() {
             <div className="flex-grow pb-24">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {filteredEntities.map((entity) => (
-                        <div key={entity.name} className="shadow-lg rounded-md overflow-clip bg-card pb-1 lg:hover:scale-[1.01] transition duration-400 ease-in-out will-change-transform">
-                            <div className="mb-4">
-                                {entity.image ? <img src={entity.image} alt="" style={{width: '100%', height: 280, objectFit: 'cover'}}/> : null}
-                                <div className="logoWrapper m-4">
-                                    <h1 className="text-center text-3xl pt-1 my-[1px]">{entity.name}</h1>
-                                </div>
-                                
+                        <div key={entity.name} className="shadow-lg rounded backdrop-blur overflow-clip bg-black/50 pb-1 lg:hover:scale-[1.01] transition duration-400 ease-in-out will-change-transform">
+                            <div className="mb-4 text-white/60">
+                                {entity.image ? <img src={entity.image} alt="" style={{ width: '100%', height: 280, objectFit: 'cover' }} /> : null}
+                                <h1 className="mx-4">{entity.name}</h1>
+
                                 <div className="px-4"><span className="font-bold">Category:</span> {entity.category}</div>
                                 <div className={`px-4 ${!entity.faction ? 'hidden' : ''}`}><span className="font-bold">Faction:</span> {entity.faction?.join(", ") || "N/A"}</div>
                                 <div className={`px-4 ${!entity.description ? 'hidden' : ''}`}>Note: {entity.description}</div>
-                                {/* <div className="text-gray-600">Expansion: {entity.expansion || "N/A"}</div> */}
                             </div>
 
                             {["Free STL", "Paid STL", "Model", "Card", "Base Token", "Product"].map((type) => {
@@ -154,14 +177,14 @@ export function FilteredTable() {
 
                                 return (
                                     <div key={`${entity.name}-${type}`} className="mb-2 px-4">
-                                        <h2 className="text-xl">{type.toUpperCase()}</h2>
+                                        <h2 className="text-xl text-white/30">{type.toUpperCase()}</h2>
                                         {itemsOfType.sort((a, b) => a.name.localeCompare(b.name)).map((item, index) => (
-                                            <div key={index}>
+                                            <div key={index} className="flex w-full">
                                                 <a
                                                     href={item.url}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="text-accent cursor-pointer block"
+                                                    className="text-white cursor-pointer block hover:underline"
                                                 >
                                                     {item.name}
                                                 </a>
@@ -177,3 +200,4 @@ export function FilteredTable() {
         </div>
     )
 }
+
