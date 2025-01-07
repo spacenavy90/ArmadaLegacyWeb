@@ -25,7 +25,7 @@ const logo = localFont({
 });
 
 export const metadata: Metadata = {
-    title: "Armada Legacy",
+    title: "Armada Legends",
 };
 
 export default function RootLayout({

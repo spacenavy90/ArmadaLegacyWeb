@@ -1,4 +1,4 @@
-type Faction = "Empire" | "Republic" | "Separatist" | "Rebel";
+type Faction = "Empire" | "Republic" | "Separatist" | "Rebel" | "Scum" | "Colonial" | "Cylon" | "UNSC" | "Covenant";
 type Category = "Ship" | "Squadron" | "Play Material" | "Service";
 
 interface Item {
@@ -17,6 +17,20 @@ interface Entity {
 }
 
 const resources: Entity[] = [
+  {
+    name: "Alpha Star Wing",
+    category: "Squadron",
+    faction: ["Empire"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6738379",
+        name: "SpaceNavy",
+      }
+    ],
+  },
   {
     name: "Assault Frigate Mark I",
     category: "Ship",
@@ -64,6 +78,7 @@ const resources: Entity[] = [
         name: "Mel Miniatures",
       },
     ],
+    description: "",
   },
   {
     name: "HMP Gunship",
@@ -108,7 +123,7 @@ const resources: Entity[] = [
       },
       {
         type: "Paid STL",
-        url: "https://resinengine.com/product/nantex-class-stl/",
+        url: "https://resinengine.com/product/nantex-stl/",
         name: "Ethan LeRoith",
       },
       {
@@ -137,7 +152,7 @@ const resources: Entity[] = [
     items: [
       {
         type: "Paid STL",
-        url: "https://resinengine.com/product/rouge-class-stl/",
+        url: "https://resinengine.com/product/rouge-stl/",
         name: "Ethan LeRoith",
       },
     ],
@@ -180,7 +195,7 @@ const resources: Entity[] = [
     items: [
       {
         type: "Paid STL",
-        url: "https://resinengine.com/product/eta-2-actis-class-interceptor-stl-armada/",
+        url: "https://resinengine.com/product/eta-2-actis-interceptor-stl-armada/",
         name: "Ethan LeRoith",
       },
       {
@@ -217,6 +232,118 @@ const resources: Entity[] = [
         url: "https://www.etsy.com/listing/1585145949",
         name: "TheShipBuilder",
       },
+    ],
+  },
+  {
+    name: "Neutron Star Bulk Cruiser",
+    category: "Ship",
+    faction: ["Scum"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6738379",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "Paris Frigate",
+    category: "Ship",
+    faction: ["UNSC"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6682737",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "Stalwart Frigate",
+    category: "Ship",
+    faction: ["UNSC"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6682737",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "Halcyon Cruiser",
+    category: "Ship",
+    faction: ["UNSC"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6682737",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "CCS Battlecruiser",
+    category: "Ship",
+    faction: ["Covenant"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6682737",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "SDV Corvette",
+    category: "Ship",
+    faction: ["Covenant"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6682737",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "Jupiter Battlestar",
+    category: "Ship",
+    faction: ["Colonial"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6738379",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "War Basestar",
+    category: "Ship",
+    faction: ["Cylon"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6738379",
+        name: "SpaceNavy",
+      }
     ],
   },
 ];

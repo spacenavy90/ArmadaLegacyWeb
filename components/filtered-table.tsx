@@ -7,10 +7,8 @@ import { ChevronDown, Search } from 'lucide-react'
 
 // Dynamic import based on the plug
 import { resources as swResources } from '@/data/sw'
-import { resources as haloResources } from '@/data/halo'
-import { resources as bsgResources } from '@/data/bsg'
 
-type Plug = 'sw' | 'halo' | 'bsg'
+type Plug = 'sw'
 
 type MultiSelectProps = {
     options: Array<{ label: string; value: string }>;
@@ -80,10 +78,6 @@ export function FilteredTable({ plug }: { plug: Plug }) {
         switch (plug) {
             case 'sw':
                 return swResources;
-            case 'halo':
-                return haloResources;
-            case 'bsg':
-                return bsgResources;
             default:
                 return [];
         }
