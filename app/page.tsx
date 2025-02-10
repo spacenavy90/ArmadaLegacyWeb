@@ -18,7 +18,7 @@ export default function Home() {
                         <h1>About Legends</h1>
 
                         <p className="text-white">
-                        Armada Legends is a community-driven project that branched off from the Legacy team. Its goal is to provide a collaborative space where the Armada homebrew community can develop high-quality content meant for enjoyable and fair casual play. In Legends, almost any ship idea can be developed by anyone, with the potential for inclusion in our custom fleet builder and Tabletop Simulator mod.
+                        Armada Legends is a community-driven initiative that emerged as an extension of the Legacy team, dedicated to fostering innovation and creativity within the Star Wars: Armada homebrew community. Its primary objective is to provide a collaborative platform where players can contribute to the development of high-quality, well-balanced content tailored for casual and thematic gameplay. Within Armada Legends, nearly any ship concept can be explored and refined, with the potential for integration into our custom Star Forge Fleet Builder and Tabletop Simulator mod, ensuring accessibility and playability for the broader community.
                         </p>
                     </section>
 
