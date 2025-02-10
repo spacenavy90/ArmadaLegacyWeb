@@ -122,6 +122,11 @@ const resources: Entity[] = [
     description: "",
     items: [
       {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6944215",
+        name: "SpaceNavy",
+      },
+      {
         type: "Model",
         url: "https://www.etsy.com/listing/1590025408",
         name: "Pulsefired Gaming",
@@ -135,6 +140,11 @@ const resources: Entity[] = [
     image: "",
     description: "",
     items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6944202",
+        name: "SpaceNavy",
+      },
       {
         type: "Paid STL",
         url: "https://www.etsy.com/listing/1286415795",
