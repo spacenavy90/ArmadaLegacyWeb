@@ -49,6 +49,11 @@ const resources: Entity[] = [
     description: "",
     items: [
       {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6944638",
+        name: "SpaceNavy",
+      },
+      {
         type: "Paid STL",
         url: "https://resinengine.com/product/subjugator-stl-armada/",
         name: "Ethan LeRoith",
@@ -164,6 +169,126 @@ const resources: Entity[] = [
         type: "Model",
         url: "https://www.etsy.com/listing/1657861810",
         name: "Memnoch Manufacturing",
+      }
+    ],
+  },
+  {
+    name: "Trident Assault Ship",
+    category: "Ship",
+    faction: ["Separatist"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6669273",
+        name: "SpaceNavy",
+      },
+      {
+        type: "Paid STL",
+        url: "https://resinengine.com/product/trident-stl/",
+        name: "Ethan LeRoith",
+      },
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1734079654",
+        name: "Pulsefired Gaming",
+      }
+    ],
+  },
+  {
+    name: "Lucrehulk Battleship",
+    category: "Ship",
+    faction: ["Separatist"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6662333",
+        name: "SpaceNavy",
+      },
+      {
+        type: "Paid STL",
+        url: "https://resinengine.com/product/lucrehulk/",
+        name: "Ethan LeRoith",
+      },
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1748366015",
+        name: "Pulsefired Gaming",
+      }
+    ],
+  },
+  {
+    name: "Interdictor Star Destroyer",
+    category: "Ship",
+    faction: ["Empire"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6662327",
+        name: "SpaceNavy",
+      },
+      {
+        type: "Paid STL",
+        url: "https://resinengine.com/product/interdictor-class-star-destroyer-stl/",
+        name: "Ethan LeRoith",
+      },
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1590164648",
+        name: "Pulsefired Gaming",
+      },
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1386305967",
+        name: "Bossnoss Creations",
+      }
+    ],
+  },
+  {
+    name: "MC80b Star Cruiser",
+    category: "Ship",
+    faction: ["Rebel","New Republic"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6662244",
+        name: "SpaceNavy",
+      },
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1654199804",
+        name: "Pulsefired Gaming",
+      },
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1680098192",
+        name: "Memnoch Manufacturing",
+      }
+    ],
+  },
+  {
+    name: "IPV-2C Stealth Corvette",
+    category: "Ship",
+    faction: ["Republic"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6660921",
+        name: "SpaceNavy",
+      },
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1328772975",
+        name: "Bossnoss Creations",
       }
     ],
   },
@@ -376,6 +501,11 @@ const resources: Entity[] = [
         type: "Free STL",
         url: "https://www.thingiverse.com/thing:6826778",
         name: "Armada_Legacy",
+      },
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1783123335",
+        name: "Pulsefired Gaming",
       }
     ],
   },
@@ -390,6 +520,11 @@ const resources: Entity[] = [
         type: "Free STL",
         url: "https://www.thingiverse.com/thing:6826801",
         name: "Armada_Legacy",
+      },
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1749676619",
+        name: "Pulsefired Gaming",
       }
     ],
   },
@@ -458,6 +593,11 @@ const resources: Entity[] = [
     description: "",
     items: [
       {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6944686",
+        name: "SpaceNavy",
+      },
+      {
         type: "Model",
         url: "https://www.etsy.com/listing/1453098685",
         name: "Pulsefired Gaming",
@@ -504,6 +644,11 @@ const resources: Entity[] = [
     image: "",
     description: "",
     items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6944580",
+        name: "SpaceNavy",
+      }
     ],
   },
   {
@@ -513,6 +658,11 @@ const resources: Entity[] = [
     image: "",
     description: "",
     items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6944573",
+        name: "SpaceNavy",
+      }
     ],
   },
   {
@@ -600,6 +750,11 @@ const resources: Entity[] = [
     description: "",
     items: [
       {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6944685",
+        name: "SpaceNavy",
+      },
+      {
         type: "Model",
         url: "https://only-games.co/products/armada-corona-frigate",
         name: "Mel Miniatures",
@@ -613,6 +768,11 @@ const resources: Entity[] = [
     image: "",
     description: "",
     items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6944660",
+        name: "SpaceNavy",
+      },
       {
         type: "Model",
         url: "https://www.etsy.com/listing/1715941308",
@@ -707,6 +867,77 @@ const resources: Entity[] = [
     ],
   },
   {
+    name: "Longsword Squadron",
+    category: "Squadron",
+    faction: ["UNSC"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6731088",
+        name: "SpaceNavy",
+      },
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6731089",
+        name: "SpaceNavy",
+      },
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1848392502",
+        name: "Pulsefired Gaming",
+      },
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1848391336",
+        name: "Pulsefired Gaming",
+      }
+    ],
+  },
+  {
+    name: "Marathon Cruiser",
+    category: "Ship",
+    faction: ["UNSC"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6683540",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "Halberd Destroyer",
+    category: "Ship",
+    faction: ["UNSC"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6734079",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "Erod SMAC",
+    category: "Ship",
+    faction: ["UNSC"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1867617223",
+        name: "Pulsefired Gaming",
+      }
+    ],
+  },
+  {
     name: "CCS Battlecruiser",
     category: "Ship",
     faction: ["Covenant"],
@@ -750,6 +981,72 @@ const resources: Entity[] = [
     ],
   },
   {
+    name: "CRS Light Cruiser",
+    category: "Ship",
+    faction: ["Covenant"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6734087",
+        name: "SpaceNavy",
+      },
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1846533050",
+        name: "Pulsefired Gaming",
+      }
+    ],
+  },
+  {
+    name: "CAS Assault Carrier",
+    category: "Ship",
+    faction: ["Covenant"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6734093",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "Banshee Squadron",
+    category: "Squadron",
+    faction: ["Covenant"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6731094",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "Seraph Squadron",
+    category: "Squadron",
+    faction: ["Covenant"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6731093",
+        name: "SpaceNavy",
+      },
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1857691109",
+        name: "Pulsefired Gaming",
+      }
+    ],
+  },
+  {
     name: "Jupiter Battlestar",
     category: "Ship",
     faction: ["Colonial"],
@@ -774,6 +1071,90 @@ const resources: Entity[] = [
     ],
   },
   {
+    name: "Mercury Battlestar",
+    category: "Ship",
+    faction: ["Colonial"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6685402",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "Manticore Corvette",
+    category: "Ship",
+    faction: ["Colonial"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6738373",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "Adamant Frigate",
+    category: "Ship",
+    faction: ["Colonial"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1701816097",
+        name: "Pullsefired Gaming",
+      }
+    ],
+  },
+  {
+    name: "Hercules Cruiser",
+    category: "Ship",
+    faction: ["Colonial"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1702288677",
+        name: "Pullsefired Gaming",
+      }
+    ],
+  },
+  {
+    name: "Viper MkII",
+    category: "Squadron",
+    faction: ["Colonial"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1687063760",
+        name: "Pullsefired Gaming",
+      }
+    ],
+  },
+  {
+    name: "Raptor Squadron",
+    category: "Squadron",
+    faction: ["Colonial"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1701240813",
+        name: "Pullsefired Gaming",
+      }
+    ],
+  },
+  {
     name: "Modern Basestar",
     category: "Ship",
     faction: ["Cylon"],
@@ -787,94 +1168,50 @@ const resources: Entity[] = [
       }
     ],
   },
+  {
+    name: "Cerastes Gunship",
+    category: "Ship",
+    faction: ["Cylon"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6738460",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "Phobs Cruiser",
+    category: "Ship",
+    faction: ["Cylon"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6740364",
+        name: "SpaceNavy",
+      }
+    ],
+  },
+  {
+    name: "Nemesis Corvette",
+    category: "Ship",
+    faction: ["Cylon"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6738450",
+        name: "SpaceNavy",
+      }
+    ],
+  },
 ];
 
 export type { Faction, Category, Item, Entity };
 
 export { resources };
-
-/*
----------------old legacy
-mc80b
-https://www.etsy.com/listing/1680098192/star-wars-armada-mc-80-b-star-cruiser
-https://www.etsy.com/listing/1654199804/new-republic-mc80b-star-cruiser-for-star
-https://www.thingiverse.com/thing:6662244
-
-interdictor sd
-https://www.etsy.com/listing/1590164648/interdictor-star-destroyer-homebrew
-https://www.etsy.com/listing/1386305967/star-wars-armada-interdictor-star
-https://www.thingiverse.com/thing:6662327
-https://resinengine.com/product/interdictor-class-star-destroyer-stl/
-
-stealth corvette
-https://www.etsy.com/listing/1328772975/star-wars-armada-republic-stealth-ship
-https://www.thingiverse.com/thing:6660921
-
-lucrehulk
-https://www.etsy.com/listing/1748366015/cis-lucrehulk-droid-control-ship-for
-https://www.thingiverse.com/thing:6662333
-https://resinengine.com/product/lucrehulk/
-
-trident
-https://www.etsy.com/listing/1734079654/cis-trident-class-assualt-ship-flotilla
-https://www.thingiverse.com/thing:6669273
-https://resinengine.com/product/trident-stl/
-
----------------halo
-marathon
-https://www.thingiverse.com/thing:6683540
-
-halberd
-https://www.thingiverse.com/thing:6734079
-
-smac
-https://www.etsy.com/listing/1867617223/unsc-erod-class-orbital-weapons-platform
-
-crs
-https://www.etsy.com/listing/1846533050/covenant-zanar-pattern-crs-light-cruiser
-https://www.thingiverse.com/thing:6734087
-
-cas
-https://www.thingiverse.com/thing:6734093
-
-banshee
-https://www.thingiverse.com/thing:6731094
-
-seraph
-https://www.etsy.com/listing/1857691109/covenant-seraph-class-fighter-squadron-6
-https://www.thingiverse.com/thing:6731093
-
-longsword
-https://www.etsy.com/listing/1848392502/unsc-longsword-c-709-fighter-squadron-6
-https://www.etsy.com/listing/1848391336/unsc-longsword-c-712-bomber-squadron-3
-https://www.thingiverse.com/thing:6731088
-https://www.thingiverse.com/thing:6731089
-
----------------bsg
-manticore
-https://www.thingiverse.com/thing:6738373
-
-adamant
-https://www.etsy.com/listing/1701816097/stalwart-frigate-for-starship-miniatures
-
-hercules
-https://www.etsy.com/listing/1702288677/hercules-missile-cruiser-for-starship
-
-viper
-https://www.etsy.com/listing/1687063760/colonial-cobra-fighters-squadron-6
-
-raptor
-https://www.etsy.com/listing/1701240813/colonial-predator-heavy-shuttle-3
-
-nemesis corvette
-https://www.thingiverse.com/thing:6738450
-
-mercury
-https://www.thingiverse.com/thing:6685402
-
-phobos
-https://www.thingiverse.com/thing:6740364
-
-cerastes
-https://www.thingiverse.com/thing:6738460
-*/
