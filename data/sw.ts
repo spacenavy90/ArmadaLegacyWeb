@@ -173,6 +173,30 @@ const resources: Entity[] = [
     ],
   },
   {
+    name: "Lancer Frigate",
+    category: "Ship",
+    faction: ["Empire"],
+    image: "",
+    description: "",
+    items: [
+      {
+        type: "Free STL",
+        url: "https://www.thingiverse.com/thing:6947231",
+        name: "SpaceNavy",
+      },
+      {
+        type: "Paid STL",
+        url: "https://www.etsy.com/listing/1428060759",
+        name: "Onil Creations",
+      },
+      {
+        type: "Model",
+        url: "https://www.etsy.com/listing/1408398373",
+        name: "Pulsefired Gaming",
+      },
+    ],
+  },
+  {
     name: "Trident Assault Ship",
     category: "Ship",
     faction: ["Separatist"],
