@@ -36,7 +36,7 @@ const resources: Entity[] = [
       },
       {
         type: "Base Token",
-        url: "https://cults3d.com/en/3d-model/game/star-wars-armada-shiptokens-base-game-legacy-legends-private-use",
+        url: "https://makerworld.com/models/1001173",
         name: "WobbleKing",
       }
     ],

@@ -9,11 +9,11 @@ import { Button } from "@/components/ui/button"
 
 const navigationItems = [
     { title: 'Home', href: '/' },
-    { title: 'Armada Legends Discord', href: 'https://discord.gg/gyCxmDDdJH' },
-    { title: 'Armada Legends Resources', href: '/resources/sw' },
+    { title: 'Discord', href: 'https://discord.gg/gyCxmDDdJH' },
+    { title: 'Resources', href: '/resources/sw' },
     //{ title: 'Halo Legends Resources', href: '/resources/halo' },
     //{ title: 'BSG Legends Resources', href: '/resources/bsg' },
-    { title: 'Armada Legends TTS Mod', href: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3281524362/' },
+    { title: 'Tabletop Simulator', href: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3281524362/' },
     { title: 'Star Forge Fleet Builder', href: 'https://star-forge.tools/' },
     { title: 'Armada Legacy', href: 'https://www.armadalegacy.com/' },
 ];
