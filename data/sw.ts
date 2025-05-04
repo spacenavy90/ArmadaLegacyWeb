@@ -18,7 +18,7 @@ interface Entity {
 
 const resources: Entity[] = [
   {
-    name: "Armada Legends Base Tokens",
+    name: "Armada Nexus Base Tokens",
     category: "Play Material",
     faction: [],
     image: "",
